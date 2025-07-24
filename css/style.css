@@ -1,0 +1,719 @@
+/****Fuentes**** */
+/*  BEBAS NUE */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/* ANTON */
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap');
+
+
+/* Reset básico */
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo base del menú */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #5A9EA3, #23757B);
+    padding: 15px 100px;
+    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+
+.navbar .logo {
+    color: #fff;
+    font-size: 1.8em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+
+.navbar ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 1px;
+}
+
+.navbar ul li a:hover {
+    color: #F99D0C;
+}
+
+.logo-img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Menu */
+
+/* Botón hamburguesa oculto en pantallas grandes */
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+
+/* Stilos Banner principal */
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    /* Altura completa de la pantalla */
+    overflow: hidden;
+}
+
+.banner video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ajusta el video para que cubra todo */
+    z-index: -1;
+    /* Para que el contenido quede encima */
+}
+
+.contenido-banner {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    color: white;
+    /* Ajusta si el fondo lo requiere */
+}
+
+.letra-naranja {
+    color: #F99D0C;
+}
+
+.contenido-banner h1 {
+    color: #FFF;
+    font-family: Anton;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.parrafo-banner {
+    margin: 140px 0;
+    max-width: 40%;
+    color: #FFF;
+    font-family: "Bebas Neue";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.btn-principal {
+    display: flex;
+    width: 12rem;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    border: 2px solid var(#23757B);
+    background: #F99D0C;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #23757B;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.btn-principal:hover {
+    border: 2px solid var(#F99D0C);
+    background: #23757B;
+    color: #F99D0C;
+}
+
+/* Info Sobre nosotros */
+
+.contenedor-nosotros {
+    width: 100%;
+    height: 40.1875rem;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    /* centra los elementos hijos horizontalmente */
+    align-items: center;
+    /* centra verticalmente */
+    gap: 3rem;
+    /* espacio entre imagen y texto, ajustable */
+}
+
+.contenedor-nosotros .nosotros-texto,
+.contenedor-nosotros .nosotros-img {
+    width: 30rem;
+    height: auto;
+    padding: 3rem 2.8rem;
+    border-radius: 0.625rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nosotros-texto {
+    gap: 1.5rem;
+    background: linear-gradient(112deg, var(--Color-celeste, #23757B) 2.85%, var(--color-naranja, #F99D0C) 98.17%);
+    text-align: center;
+}
+
+.nosotros-texto h2 {
+    margin-bottom: 15px;
+}
+
+.nosotros-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.625rem;
+}
+
+/* Section-planes */
+.contenedor-planes {
+    padding: 30px 100px;
+    height: 100%;
+    justify-content: center;
+
+}
+
+.contenedor-planes .contenedores-info {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+#card-medio {
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-planes h2 {
+    text-align: center;
+    padding: 30px 100px;
+    font-family: 'Anton', sans-serif;
+    font-size: 2.5rem;
+    gap: 50px;
+}
+
+.contenedor-planes h3 {
+    text-align: center;
+    padding: 0;
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+    font-family: Anton;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.contenedor-planes p {
+    font-family: "Exo 2";
+    width: 50%;
+    padding: 20px 0;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+}
+
+.contenedor-planes .contenido-p {
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-planes .card-1 {
+    display: flex;
+    align-items: center;
+    background-color: #494949;
+    width: 80%;
+    height: 80%;
+}
+
+.contenedor-planes .card-1_1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.contenedor-planes .card-1:hover {
+    background-color: #5c5c5c;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Stilos botones */
+
+.contenedor-botones {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.boton-redondo {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 40px;
+    /* mismo ancho que el SVG */
+    height: 40px;
+    /* mismo alto que el SVG */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.boton-redondo:hover {
+    transform: scale(1.1) rotate(2deg);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    /* Sombra sutil */
+    filter: brightness(1.1);
+    /* aclara un poco el SVG */
+}
+
+.boton-redondo svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/* Estilos Planes de nutricion */
+.contenedor-nutricion {
+    width: 100%;
+    height: 100%;
+    padding: 50px 150px;
+    justify-content: center;
+    background-color: #000000;
+}
+
+.contenedor-nutricion .contenedor-3_cards {
+    display: flex;
+    padding-top: 130px;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+.contenedor-nutricion .nutricion-1 {
+    display: flex;
+    flex-direction: column;
+    /* Para alinear contenido en columna */
+    align-items: center;
+    /* Centra horizontalmente */
+    justify-content: center;
+    /* Centra verticalmente */
+    height: 100%;
+    /* Asegura que use toda la altura disponible */
+    gap: 15px;
+}
+
+.contenedor-nutricion .nutricion-1 img {
+    width: 200px;
+}
+
+.contenedor-nutricion h3 {
+    text-align: center;
+    padding: 0;
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #fff;
+}
+
+.contenedor-nutricion h4 {
+    padding: 0;
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    font-family: Anton;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #fff;
+}
+
+.btn-nutricion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Formulario-contacto */
+
+.formulario-ubicacion {
+    width: 100%;
+    height: 100%;
+    padding: 30px 100px;
+    display: flex;
+    text-align: center;
+    gap: 20px;
+}
+
+.formulario-ubicacion h2 {
+    padding-bottom: 25px;
+}
+
+.formulario-ubicacion p {
+    padding-bottom: 25px;
+
+}
+
+.formulario-ubicacion .barras-formulario {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 25px;
+    gap: 15px;
+}
+
+.formulario-ubicacion .barras-formulario .campo {
+    padding: 1rem;
+    border-radius: 5px;
+    border: 2px solid #000000;
+}
+
+.formulario-ubicacion .btn-form {
+    display: flex;
+    width: 12rem;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    border: 2px solid #000000;
+    background: #000000;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #F99D0C;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 0 auto;
+}
+
+.formulario-ubicacion .btn-form:hover {
+    border: 2px solid #F99D0C;
+    background: #F99D0C;
+    color: #000;
+}
+
+
+
+
+.content-formulario #btn-enviar {
+    text-align: center;
+}
+
+/* Contenido del mapa */
+
+.content-formulario,
+.content-mapa {
+    width: 50%;
+}
+
+.content-mapa iframe {
+    width: 100%;
+    height: 85%;
+}
+
+
+/* Estilos footer */
+
+
+footer {
+    padding: 30px 100px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(144deg, var(--Color-celeste, #23757B) 43.46%, #F99D0C 84.78%);
+}
+
+.botones-footer {
+    display: flex;
+    justify-content: center;
+    /* Centra horizontalmente */
+    align-items: center;
+    /* Centra verticalmente */
+    gap: 10px;
+
+}
+
+.info-izquierdo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centra los elementos hijos como el logo y los botones */
+}
+
+.info-izquierdo img {
+    margin-bottom: 50px;
+}
+
+
+.info-derecho {
+    width: 50%;
+}
+
+
+
+.info-derecho p {
+    font-family: "Exo 2," sans-serif;
+    padding: 20px 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+}
+
+.info-derecho h2 {
+    padding: 20px 0;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+}
+
+
+
+
+
+
+/* Estilos-boton */
+
+.subscription-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.subscription-form input {
+    padding: 5px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-right: none;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+    width: 250px;
+    /* o usa max-width: 100% si es responsive */
+}
+
+.subscription-form button {
+    background-color: #007bff;
+    border: 1px solid #007bff;
+    color: white;
+    padding: 5px 8px;
+    font-size: 1rem;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.subscription-form button:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .parrafo-banner {
+    max-width: 100%;
+    color: #FFF;
+}
+
+    .navbar{
+        position: relative;
+
+    }
+    .navbar ul {
+        flex-direction: column;
+        position: absolute;
+        top: -1000%;
+        left: 0;
+        width: 100%;
+        background-color: #2c3e50;
+        transition: top 0.5s ease;
+        /* Oculto por defecto */
+    }
+
+    .navbar ul.active {
+        top: 100%;
+    }
+
+    .navbar ul li {
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    /* H1 */
+
+    .contenido-banner h1 {
+        font-size: 2rem;
+
+    }
+
+    /* Contenido nosotros */
+
+    .contenedor-nosotros {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .contenedor-nosotros .nosotros-texto {
+        width: 90%;
+        display: flex;
+        gap: 2rem;
+        margin-top: 40px;
+        padding: 0 1rem;
+    }
+
+    /* Section-planes */
+    .planes-img img {
+        display: none;
+    }
+
+    .contenedor-planes h2 {
+        text-align: center;
+        padding: 30px 100px;
+        font-family: 'Anton', sans-serif;
+        font-size: 1.5rem;
+        gap: 50px;
+    }
+
+    .contenedor-planes h3 {
+        text-align: center;
+        padding: 0;
+        font-family: 'Anton', sans-serif;
+        text-align: center;
+        font-family: Anton;
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+
+    .contenedor-planes p {
+        font-family: "Exo 2";
+        width: 50%;
+        padding: 20px 0;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: normal;
+        text-align: center;
+    }
+
+    .boton-redondo {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        border-radius: 50%;
+        overflow: hidden;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contenedor-planes .card-1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 90px;
+    }
+
+    .contenedor-planes p {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    /* Planes de nutricion */
+
+    .contenedor-nutricion .contenedor-3_cards {
+        display: flex;
+        flex-direction: column;
+        padding-top: 60px;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    /* Ubicacion */
+
+    .formulario-ubicacion {
+        width: 100%;
+        height: 100%;
+        padding: 30px 100px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 100px;
+    }
+
+    .formulario-ubicacion .btn-form {
+        padding: 10px 20px;
+    }
+
+    /* Footer */
+
+    footer {
+        padding: 30px 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        background: linear-gradient(144deg, var(--Color-celeste, #23757B) 43.46%, #F99D0C 84.78%);
+    }
+
+}
