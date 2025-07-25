@@ -43,7 +43,6 @@ header{
 
 .formulario-ubicacion .btn-form {
     display: flex;
-    width: 12rem;
     padding: 10px 20px;
     justify-content: center;
     align-items: center;
