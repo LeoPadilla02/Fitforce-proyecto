@@ -382,7 +382,7 @@ body {
 .formulario-ubicacion {
     width: 100%;
     height: 100%;
-    padding: 30px 100px;
+    padding: 0;
     display: flex;
     text-align: center;
     gap: 20px;
@@ -413,8 +413,7 @@ body {
 
 .formulario-ubicacion .btn-form {
     display: flex;
-    width: 12rem;
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
     justify-content: center;
     align-items: center;
     border-radius: 15px;
@@ -681,6 +680,12 @@ footer {
 
     /* Planes de nutricion */
 
+
+    .contenedor-nutricion h3 {
+    font-size: 1rem;
+
+}
+
     .contenedor-nutricion .contenedor-3_cards {
         display: flex;
         flex-direction: column;
@@ -701,9 +706,9 @@ footer {
         padding: 100px;
     }
 
-    .formulario-ubicacion .btn-form {
+    /* .formulario-ubicacion .btn-form {
         padding: 10px 20px;
-    }
+    } */
 
     /* Footer */
 
@@ -717,3 +722,61 @@ footer {
     }
 
 }
+
+
+/* Responsive */
+@media (max-width: 418px) {
+.contenedor-nosotros .nosotros-texto, .contenedor-nosotros .nosotros-img {
+    width: 20rem;
+
+}
+
+.contenedor-planes h2 {
+    text-align: center;
+    padding: 30px 100px;
+    font-family: 'Anton', sans-serif;
+    font-size: 1.5rem;
+    gap: 50px;
+}
+
+.contenedor-planes {
+    padding: 20px 50px;
+    height: 100%;
+    justify-content: center;
+
+}
+
+    .contenedor-nutricion h3 {
+    font-size: 0.8rem;
+
+}
+
+
+
+}
+
+
+@media (max-width: 462px) {
+.contenedor-nosotros .nosotros-texto, .contenedor-nosotros .nosotros-img {
+    width: 20rem;
+
+}
+
+.contenedor-planes h2 {
+    text-align: center;
+    padding: 30px 100px;
+    font-family: 'Anton', sans-serif;
+    font-size: 1.5rem;
+    gap: 50px;
+}
+
+.contenedor-planes {
+    padding: 20px 50px;
+    height: 100%;
+    justify-content: center;
+
+}
+
+}
+
+
