@@ -63,6 +63,21 @@ header{
     color: #000;
 }
 
+.formulario-ubicacion .btn-form {
+    display: flex;
+    padding: 0.625rem 1.25rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    border: 2px solid #000000;
+    background: #000000;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #F99D0C;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 0 auto;
+}
+
 
 @media (max-width: 768px) {
 
