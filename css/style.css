@@ -382,7 +382,7 @@ body {
 .formulario-ubicacion {
     width: 100%;
     height: 100%;
-    padding: 0;
+    padding: 30px 100px;
     display: flex;
     text-align: center;
     gap: 20px;
@@ -406,14 +406,13 @@ body {
 }
 
 .formulario-ubicacion .barras-formulario .campo {
-    padding: 1rem 1.5rem;
+    padding: 0.5rem 1.5rem;
     border-radius: 5px;
     border: 2px solid #000000;
 }
 
 .formulario-ubicacion .btn-form {
-    display: flex;
-    padding: 0.625rem 1.25rem;
+    padding: 0.55rem 3rem;
     justify-content: center;
     align-items: center;
     border-radius: 15px;
@@ -566,14 +565,15 @@ footer {
     }
 
     .parrafo-banner {
-    max-width: 100%;
-    color: #FFF;
-}
+        max-width: 100%;
+        color: #FFF;
+    }
 
-    .navbar{
+    .navbar {
         position: relative;
 
     }
+
     .navbar ul {
         flex-direction: column;
         position: absolute;
@@ -682,9 +682,9 @@ footer {
 
 
     .contenedor-nutricion h3 {
-    font-size: 1rem;
+        font-size: 1rem;
 
-}
+    }
 
     .contenedor-nutricion .contenedor-3_cards {
         display: flex;
@@ -697,18 +697,15 @@ footer {
     /* Ubicacion */
 
     .formulario-ubicacion {
-        width: 100%;
-        height: 100%;
-        padding: 30px 100px;
+        padding: 20px 60px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        padding: 100px;
     }
 
-    /* .formulario-ubicacion .btn-form {
-        padding: 10px 20px;
-    } */
+    .formulario-ubicacion .btn-form {
+        padding: 0.40rem 2rem;
+    }
 
     /* Footer */
 
@@ -726,30 +723,39 @@ footer {
 
 /* Responsive */
 @media (max-width: 418px) {
-.contenedor-nosotros .nosotros-texto, .contenedor-nosotros .nosotros-img {
-    width: 20rem;
 
-}
+    .contenedor-nosotros .nosotros-texto,
+    .contenedor-nosotros .nosotros-img {
+        width: 20rem;
 
-.contenedor-planes h2 {
-    text-align: center;
-    padding: 30px 100px;
-    font-family: 'Anton', sans-serif;
-    font-size: 1.5rem;
-    gap: 50px;
-}
+    }
 
-.contenedor-planes {
-    padding: 20px 50px;
-    height: 100%;
-    justify-content: center;
+    .contenedor-planes h2 {
+        text-align: center;
+        padding: 30px 100px;
+        font-family: 'Anton', sans-serif;
+        font-size: 1.5rem;
+        gap: 50px;
+    }
 
-}
+    .contenedor-planes {
+        padding: 20px 50px;
+        height: 100%;
+        justify-content: center;
+
+    }
 
     .contenedor-nutricion h3 {
-    font-size: 0.8rem;
+        font-size: 0.8rem;
 
-}
+    }
+
+    .formulario-ubicacion {
+        padding: 20px 60px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
 
 
@@ -757,26 +763,33 @@ footer {
 
 
 @media (max-width: 462px) {
-.contenedor-nosotros .nosotros-texto, .contenedor-nosotros .nosotros-img {
-    width: 20rem;
+
+    .contenedor-nosotros .nosotros-texto,
+    .contenedor-nosotros .nosotros-img {
+        width: 20rem;
+
+    }
+
+    .contenedor-planes h2 {
+        text-align: center;
+        padding: 30px 100px;
+        font-family: 'Anton', sans-serif;
+        font-size: 1.5rem;
+        gap: 50px;
+    }
+
+    .contenedor-planes {
+        padding: 20px 50px;
+        height: 100%;
+        justify-content: center;
+
+    }
+
+    .formulario-ubicacion {
+        padding: 20px 0px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
 }
-
-.contenedor-planes h2 {
-    text-align: center;
-    padding: 30px 100px;
-    font-family: 'Anton', sans-serif;
-    font-size: 1.5rem;
-    gap: 50px;
-}
-
-.contenedor-planes {
-    padding: 20px 50px;
-    height: 100%;
-    justify-content: center;
-
-}
-
-}
-
-
