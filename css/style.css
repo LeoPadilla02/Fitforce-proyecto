@@ -350,6 +350,12 @@ body {
 
 .contenedor-nutricion .nutricion-1 img {
     width: 200px;
+    border-radius: 25px 0 25px 0;
+}
+
+.contenedor-nutricion #nutricion-medio img {
+    width: 200px;
+    border-radius: 0px 25px 0 25px;
 }
 
 .contenedor-nutricion h3 {

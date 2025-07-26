@@ -1,33 +1,62 @@
-header{
-    height: 100dvh;
+/****Fuentes**** */
+/*  BEBAS NUE */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/* ANTON */
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap');
 
+
+/* Reset básico */
+
+html {
+    scroll-behavior: smooth;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
 
-.formulario-ubicacion {
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo base del menú */
+
+/* Formulario-contacto */
+
+.formulario-comentario {
     width: 100%;
-    height: 100%;
+    height: 100vh;
+    /* Usa viewport height para centrar verticalmente */
     padding: 30px 100px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    /* Asegura que el contenido esté en columna */
     justify-content: center;
-    background:  #1e3e41;
-}
-
-.formulario-ubicacion h2 {
+    /* Centra verticalmente */
+    align-items: center;
+    /* Centra horizontalmente */
     text-align: center;
+    gap: 20px;
 }
 
-.formulario-ubicacion p {
+.content-coment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centra horizontalmente */
+    width: 100%;
+    max-width: 500px;
+    /* Opcional: controla el ancho máximo */
+}
+
+.formulario-comentario h2 {
     padding-bottom: 25px;
-    
 }
 
-
-
-.formulario-ubicacion .barras-formulario {
+.formulario-comentario .barras-coment {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -35,16 +64,15 @@ header{
     gap: 15px;
 }
 
-.formulario-ubicacion .barras-formulario .campo {
-    padding: 1rem;
+.formulario-comentario .campo {
+    padding: 0.5rem 1.5rem;
     border-radius: 5px;
     border: 2px solid #000000;
+    width: 100%;
 }
 
-.formulario-ubicacion .btn-form {
+.formulario-comentario .btn-form {
     padding: 0.55rem 3rem;
-    justify-content: center;
-    align-items: center;
     border-radius: 15px;
     border: 2px solid #000000;
     background: #000000;
@@ -52,31 +80,42 @@ header{
     color: #F99D0C;
     text-transform: uppercase;
     font-weight: 600;
-    margin: 0 auto;
+    text-align: center;
+    cursor: pointer;
 }
 
-.formulario-ubicacion .btn-form:hover {
+.formulario-comentario  .btn-form:hover {
     border: 2px solid #F99D0C;
     background: #F99D0C;
     color: #000;
 }
 
+/* Contenido del mapa */
 
+
+
+
+
+
+
+
+
+/* Responsive */
 @media (max-width: 768px) {
-
-        .menu-toggle {
+    .menu-toggle {
         display: block;
     }
 
     .parrafo-banner {
-    max-width: 100%;
-    color: #FFF;
-}
+        max-width: 100%;
+        color: #FFF;
+    }
 
-    .navbar{
+    .navbar {
         position: relative;
 
     }
+
     .navbar ul {
         flex-direction: column;
         position: absolute;
@@ -97,50 +136,147 @@ header{
         text-align: center;
     }
 
+    /* H1 */
 
+    .contenido-banner h1 {
+        font-size: 2rem;
 
+    }
 
-        .formulario-ubicacion {
-        width: 100%;
-        height: 100%;
+    /* Contenido nosotros */
+
+    .contenedor-nosotros {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .contenedor-nosotros .nosotros-texto {
+        width: 90%;
+        display: flex;
+        gap: 2rem;
+        margin-top: 40px;
+        padding: 0 1rem;
+    }
+
+    /* Section-planes */
+    .planes-img img {
+        display: none;
+    }
+
+    .contenedor-planes h2 {
+        text-align: center;
         padding: 30px 100px;
+        font-family: 'Anton', sans-serif;
+        font-size: 1.5rem;
+        gap: 50px;
+    }
+
+    .contenedor-planes h3 {
+        text-align: center;
+        padding: 0;
+        font-family: 'Anton', sans-serif;
+        text-align: center;
+        font-family: Anton;
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+
+    .contenedor-planes p {
+        font-family: "Exo 2";
+        width: 50%;
+        padding: 20px 0;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: normal;
+        text-align: center;
+    }
+
+    .boton-redondo {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        border-radius: 50%;
+        overflow: hidden;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contenedor-planes .card-1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 90px;
+    }
+
+    .contenedor-planes p {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    /* Planes de nutricion */
+
+
+    .contenedor-nutricion h3 {
+        font-size: 1rem;
+
+    }
+
+    .contenedor-nutricion .contenedor-3_cards {
+        display: flex;
+        flex-direction: column;
+        padding-top: 60px;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    /* Ubicacion */
+
+    .formulario-comentario  {
+        padding: 20px 60px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        padding: 100px;
     }
 
-    .formulario-ubicacion .btn-form {
-    padding: 10px 20px;
-} 
+    .formulario-comentario n .btn-form {
+        padding: 0.40rem 2rem;
+    }
+
+    /* Footer */
+
+    footer {
+        padding: 30px 100px;
+        margin: 20px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        background: linear-gradient(144deg, var(--Color-celeste, #23757B) 43.46%, #F99D0C 84.78%);
+    }
 
 }
 
+
+/* Responsive */
 @media (max-width: 418px) {
-.contenedor-nosotros .nosotros-texto, .contenedor-nosotros .nosotros-img {
-    width: 20rem;
-
-}
-
-.contenedor-planes h2 {
-    text-align: center;
-    padding: 30px 100px;
-    font-family: 'Anton', sans-serif;
-    font-size: 1.5rem;
-    gap: 50px;
-}
-
-.contenedor-planes {
-    padding: 20px 50px;
-    height: 100%;
-    justify-content: center;
-
-}
-
     .contenedor-nutricion h3 {
-    font-size: 0.8rem;
+        font-size: 0.8rem;
+    }
 
-}
+
+    .formulario-comentario {
+        padding: 20px 60px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
 
 
@@ -148,28 +284,8 @@ header{
 
 
 @media (max-width: 462px) {
-.contenedor-nosotros .nosotros-texto, .contenedor-nosotros .nosotros-img {
-    width: 20rem;
-
-}
-
-.contenedor-planes h2 {
-    text-align: center;
-    padding: 30px 100px;
-    font-family: 'Anton', sans-serif;
-    font-size: 1.5rem;
-    gap: 50px;
-}
-
-.contenedor-planes {
-    padding: 20px 50px;
-    height: 100%;
-    justify-content: center;
-}
-
-
-    .formulario-ubicacion {
-        padding: 20px 0px;
+    .formulario-comentario {
+        padding: 20px 20px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
